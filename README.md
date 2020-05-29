@@ -52,19 +52,19 @@ First, download the Python script.
 
 This program is built using Python 3, so if you want to run the raw code of this program you will need a way of running Python 3 scripts. This program depends on these modules below.
 
-Required Python Modules
+**Required Python Modules**
 
-os
-sys
-threading
-random
-string
-Tkinter
-time
-DateTime
-eyed3
-tinytag
-PIL (also known as pillow)
+ - os
+ - sys
+ - threading
+ - random
+ - string
+ - Tkinter
+ - time
+ - DateTime
+ - eyed3
+ - tinytag
+ - PIL (also known as pillow)
 
 Most of those modules come pre-installed with Python, but on some systems like Linux, some packages may be missing which you will have to install. Then once those modules are installed on your system you can run the raw Python script. 
 
