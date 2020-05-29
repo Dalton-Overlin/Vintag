@@ -23,7 +23,7 @@ class ver:
     of authorization to sell this program (unmodified) for
     a price. Just be aware of this, this code is open source
     and is Freeware! Don't be tricked into paying for free software.
-##########################################################
+########################################################## 
 MIT License
 -----------
 
