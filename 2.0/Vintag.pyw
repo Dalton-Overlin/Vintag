@@ -1,12 +1,12 @@
 class ver:
-    sion="2.0" # Version number of program. # ver.sion
+    sion="2.1" # Version number of program. # ver.sion
 """
 ##############################
     Vintag.
 ##############################
     Coded by: Dalton Overlin
 ##########################################################
-    Last Code Revision Date: May. 26th, 2020
+    Last Code Revision Date: Jul. 9th, 2020
 ##########################################################
     This program is for sorting a directory full of mp3
     files. It scans the directory you slect to sort and
@@ -150,6 +150,8 @@ if "nt" in ex.thisOS: ex.v = "\\"
 else: ex.v = "/"
 class maxx:
     div=' ' # This can be anything like ' ', ' - ', etc.  maxx.div
+def rep(hexa):
+    return hexa.replace("/", "_Forward-Slash_").replace("\\", "_Back-Slash_").replace(":", "_Colon_").replace("*", "_Star_").replace("?", "_Question_Mark_").replace("\"", "_Quote-Mark_").replace("'", "_Up_Mark_").replace("<", "_Left-Arrow_").replace(">", "_Right-Arrow_").replace("|", "_Bar_").replace(" ", "_Space_")
 def reno(Input):
     if type(Input)!=list:
         print('Input must be list!')
@@ -234,7 +236,8 @@ def reno(Input):
         temp=str(cova)
         while len(temp) != tim:
             temp='0'+temp
-        holder.append(temp+t)
+        victor=rep(temp+t)
+        holder.append(victor)
         cova+=1
     return holder
 if os.path.isfile(ex.tide+ex.v+'temp-vox-O.jpg'):
@@ -1031,7 +1034,7 @@ def mainCat(indo):
         if df.replace(' ','').replace('\n','').replace('\t','')=='':
             sorter()
         else:
-            df=df.replace('\n','').replace('\t','').replace('\\',ex.v).replace('/',ex.v)
+            df=df.replace('\n','').replace('\t','').replace('\\',ex.v).replace('/',ex.v).replace('"',"").replace("'","").strip()
             if os.path.isdir(df):
                 root.destroy()
                 egg=masterLoop(df)
