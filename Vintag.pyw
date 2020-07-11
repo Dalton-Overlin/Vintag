@@ -151,7 +151,7 @@ else: ex.v = "/"
 class maxx:
     div=' ' # This can be anything like ' ', ' - ', etc.  maxx.div
 def rep(hexa):
-    return hexa.replace("/", "_Forward-Slash_").replace("\\", "_Back-Slash_").replace(":", "_Colon_").replace("*", "_Star_").replace("?", "_Question_Mark_").replace("\"", "_Quote-Mark_").replace("'", "_Up_Mark_").replace("<", "_Left-Arrow_").replace(">", "_Right-Arrow_").replace("|", "_Bar_").replace(" ", "_Space_")
+    return hexa.replace("/", "").replace("\\", "").replace(":", "").replace("*", "").replace("?", "").replace("\"", "").replace("'", "").replace("<", "").replace(">", "").replace("|", "")
 def reno(Input):
     if type(Input)!=list:
         print('Input must be list!')
